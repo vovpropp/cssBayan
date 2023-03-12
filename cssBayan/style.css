@@ -38,6 +38,7 @@
 }
 
 .bayan__title {
+  position: relative;
   display: block;
   padding: 10px 20px;
   font-size: 24px;
@@ -46,8 +47,26 @@
   cursor: pointer;
 }
 
+.bayan__title:after {
+  content: '+';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 40px;
+  font-family: "Lobster", "Arial",sans-serif;
+  transition: 0.5s transform;
+}
+
 .bayan__toggle:checked ~ .bayan__content {
   max-height: 1500px;
+}
+
+.bayan__toggle:checked ~ .bayan__title:after {
+  transform: rotate(40deg);
+}
+
+.bayan__item:hover > .bayan__title:after {
+  transform: rotate(40deg);
 }
 
 .bayan__title:hover ~ .bayan__content {
@@ -59,9 +78,10 @@
   cursor: pointer;
 }
 
+
 .bayan__content {
   max-height: 0;
-  transition: 0.3s all;
+  transition: 1s max-height;
   overflow: hidden;
 }
 

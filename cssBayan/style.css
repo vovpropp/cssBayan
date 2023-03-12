@@ -102,7 +102,7 @@ body {
   transform: rotate(45deg);
 }
 
-.bayan__item:hover > .bayan__icon {
+.bayan__label:hover .bayan__icon {
   transform: rotate(45deg);
 }
 

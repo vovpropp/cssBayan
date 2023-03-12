@@ -1,0 +1,23 @@
+.bayan__toggle {
+  position: absolute;
+  opacity: 0;
+  display: none;
+}
+
+.bayan__title {
+  cursor: pointer;
+}
+
+.bayan__toggle:checked ~ .bayan__content {
+  max-height: 1500px;
+}
+
+.bayan__title:hover ~ .bayan__content {
+  max-height: 1500px;
+}
+
+.bayan__content {
+  max-height: 0;
+  transition: max-width 0.3s all;
+  overflow: hidden;
+}

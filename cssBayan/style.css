@@ -1,3 +1,36 @@
+@font-face {
+  font-family: "Lobster";
+  src: url("./fonts/Lobster-Regular.ttf");
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.bayan {
+  margin: 0 auto;
+  width: 600px;
+}
+
+.bayan__header {
+  padding: 10px 20px;
+  margin: 0;
+  font-size: 30px;
+  line-height: 40px;
+  font-family: "Lobster", "Arial",sans-serif;
+  color: #4e235e;
+}
+
+.bayan__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.bayan__item {
+  border-top: 2px solid #e5e5e5;
+}
+
 .bayan__toggle {
   position: absolute;
   opacity: 0;
@@ -5,6 +38,11 @@
 }
 
 .bayan__title {
+  display: block;
+  padding: 10px 20px;
+  font-size: 24px;
+  line-height: 30px;
+  font-family: "Lobster", "Arial",sans-serif;
   cursor: pointer;
 }
 
@@ -16,8 +54,19 @@
   max-height: 1500px;
 }
 
+.bayan__content:hover {
+  max-height: 1500px;
+  cursor: pointer;
+}
+
 .bayan__content {
   max-height: 0;
-  transition: max-width 0.3s all;
+  transition: 0.3s all;
   overflow: hidden;
+}
+
+.bayan__img {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
 }

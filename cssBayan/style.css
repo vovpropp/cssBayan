@@ -74,7 +74,7 @@ body {
   height: 1.4rem;
   background: url('./images/icon-plus.svg') 0 0 no-repeat;
   background-size: contain;
-  transition: 0.5s transform;
+  transition: 0.3s transform;
 }
 
 .bayan:hover .bayan__icon {
@@ -125,7 +125,7 @@ body {
   max-height: 0;
   margin: 0;
   transform: scale(0);
-  transition: 0.2s all;
+  transition: 0.3s all;
   overflow: hidden;
 }
 
